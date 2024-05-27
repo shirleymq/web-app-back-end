@@ -11,7 +11,7 @@ class StringValueService
 
         for ($sizeS = 1; $sizeS <= $sizeT; $sizeS++) {
             for ($pos = 0; $pos <= $sizeT - $sizeS; $pos++) {
-                $substringS = substr($t, $pos, $sizeS);
+                $substringS = substr($stringT, $pos, $sizeS);
                 $occurrencesNumber = $this->countOcurrencesSubstring($stringT, $substringS);
                 $value = $sizeS * $occurrencesNumber;
                 if ($value > $maxValue) {

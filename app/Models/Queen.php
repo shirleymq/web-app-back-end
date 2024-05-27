@@ -35,7 +35,7 @@ class Queen
     {
         $currentRow = $this->row;
         $currentCol = $this->col;
-        $count = 0;
+        $square = 0;
 
         while (true) {
             $currentRow += $rowIncrement;
@@ -45,9 +45,9 @@ class Queen
                 break;
             }
 
-            $count++;
+            $square++;
         }
 
-        return $count;
+        return $square;
     }
 }
